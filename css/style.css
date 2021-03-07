@@ -230,9 +230,25 @@ button.btnCat{
 }
 
 @media (max-width:680px){
-    .checkbtn{
+    #menu {
+        top:200px;
+        left:-1000px;
+    }
+    #menu-checkbox:checked ~ #menu {
         display: block;
-        margin-left: -10px;
+        left:10px;
+    }
+    #menu-checkbox {
+        /*opacity: 0;*/
+        display: block;
+        position: relative;
+        /*top: -1000px;*/
+    }
+    .btnCat,#menu-avant{
+        display: none;
+    }
+    #second-navigation{
+        width:calc(100% - 60px);
     }
 
 }
