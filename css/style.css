@@ -63,25 +63,26 @@ header{
     background-color: var(--third-bg-color);
 }
 #menu-avant{
-    background-color: forestgreen;
     width: 40px;
+    height: 100%;
 }
 #apr-menu{
-    background-color: var(--second-bg-color);
+    /*background-color: var(--second-bg-color);*/
     width: 30%;
+    color:var(--main-bg-color);
+    font-size: 1.2em;
+    text-align: center;
 }
+
+/* Menu wrap sur le cote */
 #main-navigation{
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     width: 60px;
-    background-color: chocolate;
 }
-#second-navigation{
-    width:calc(100% - 400px);
-    background: burlywood;
-}
+
 #nav-wrapper{
     width: 60px;
     display: flex;
@@ -122,6 +123,25 @@ header{
     color:var(--second-bg-color);
 }
 
+/* Menu du centre */
+#second-navigation{
+    width:calc(70% - 400px);
+}
+#second-menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+#second-menu li a {
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    line-height: 2em;
+    color:var(--main-bg-color);
+}
+#second-menu li a:hover {
+    color:var(--second-bg-color);
+}
+
+/* footer */
 footer{
     background-color: var(--thrid-bg-color);
     width: 100%;
@@ -225,6 +245,12 @@ button.btnCat{
         display: none;
     }
     #second-navigation{
+        width:auto;
+    }
+    #apr-menu{
+        display: none;
+    }
+    #second-navigation{
         width:calc(100% - 60px);
     }
 }
@@ -248,7 +274,7 @@ button.btnCat{
 	    position: relative;
         background-color: var(--third-bg-color);
         width: 60px;
-        height: 50px;
+        height: 40px;
         cursor: pointer;
         display: inline-block;
     }
@@ -257,7 +283,7 @@ button.btnCat{
         top: 20px;
         left: 6px;
         right: 6px;
-        height: 8px;
+        height: 4px;
         background: var(--main-bg-color);
     }
     .menu-checkbox + label span:after,
@@ -265,15 +291,15 @@ button.btnCat{
     position: absolute;
     left: 0;
     width: 100%;
-    height: 8px;
+    height: 4px;
     background-color: var(--main-bg-color);
     content: ""
     }
     .menu-checkbox + label span:before{
-        top: -20px;
+        top: -14px;
     }
     .menu-checkbox + label span:after{
-        bottom: -20px;
+        bottom: -14px;
     }
     .menu-checkbox + label span:after,
     .menu-checkbox + label span:before{
@@ -299,10 +325,6 @@ button.btnCat{
     }
 
 
-
-
-
-
     .btnCat,#menu-avant{
         display: none;
     }
@@ -310,7 +332,12 @@ button.btnCat{
         width:calc(100% - 60px);
         /*test*/
     }
-
+    #second-menu li a {
+        padding: 0;
+        font-size: 0.8em;
+        line-height: 1em;
+        color:var(--main-bg-color);
+    }
 }
 
 
