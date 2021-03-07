@@ -249,6 +249,7 @@ button.btnCat{
     }
     #second-navigation{
         width:calc(100% - 60px);
+        /*test*/
     }
 
 }
