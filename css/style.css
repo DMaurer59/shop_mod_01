@@ -99,10 +99,10 @@ header{
     left:100px;
     background-color: var(--main-bg-color);
 }
-#menu-checkbox:checked ~ #menu {
+.menu-checkbox:checked ~ #menu {
     display: block;
 }
-#menu-checkbox {
+.menu-checkbox {
     /*opacity: 0;*/
     display: none;
 	position: relative;
@@ -195,7 +195,7 @@ button.btnCat{
         top:250px;
         left:100px;
     }
-    #menu-checkbox ~ #menu {
+    .menu-checkbox ~ #menu {
         display: block;
         left:100px;
     }
@@ -211,11 +211,11 @@ button.btnCat{
         top:250px;
         left:-1000px;
     }
-    #menu-checkbox:checked ~ #menu {
+    .menu-checkbox:checked ~ #menu {
         display: block;
         left:10px;
     }
-    #menu-checkbox {
+    .menu-checkbox {
         /*opacity: 0;*/
         display: block;
         position: relative;
@@ -234,16 +234,75 @@ button.btnCat{
         top:200px;
         left:-1000px;
     }
-    #menu-checkbox:checked ~ #menu {
+    .menu-checkbox:checked ~ #menu {
         display: block;
         left:10px;
     }
-    #menu-checkbox {
+    .menu-checkbox {
         /*opacity: 0;*/
-        display: block;
+        display: none;
         position: relative;
         /*top: -1000px;*/
     }
+    .menu-checkbox + label{
+	    position: relative;
+        background-color: var(--third-bg-color);
+        width: 60px;
+        height: 50px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .menu-checkbox + label span{
+        position: absolute;
+        top: 20px;
+        left: 6px;
+        right: 6px;
+        height: 8px;
+        background: var(--main-bg-color);
+    }
+    .menu-checkbox + label span:after,
+    .menu-checkbox + label span:before{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: var(--main-bg-color);
+    content: ""
+    }
+    .menu-checkbox + label span:before{
+        top: -20px;
+    }
+    .menu-checkbox + label span:after{
+        bottom: -20px;
+    }
+    .menu-checkbox + label span:after,
+    .menu-checkbox + label span:before{
+        transition: .3s
+    }
+        
+    .menu-checkbox:checked +label{
+        background-color: var(--third-bg-color);
+    }
+        
+    .menu-checkbox:checked + label span{
+    transition: 1s;
+    transform: rotate(45deg)
+    }
+        
+    .menu-checkbox:checked + label span:before{
+        top:0;
+    }
+        
+    .menu-checkbox:checked +label span:after{
+    bottom:0;
+    transform:rotate(-90deg);
+    }
+
+
+
+
+
+
     .btnCat,#menu-avant{
         display: none;
     }
@@ -253,3 +312,5 @@ button.btnCat{
     }
 
 }
+
+
