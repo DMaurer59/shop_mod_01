@@ -1,0 +1,192 @@
+:root {
+    --main-bg-color: #fff;
+    --second-bg-color: #9ABF1A;
+    --third-bg-color: #243238;
+    --four-bg-color: #243238;
+
+  }
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html, body, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: normal;
+    word-spacing: normal;
+    
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#blocPrincipal {
+    width: 100%;
+    max-width: 1920px;
+}
+.ecran {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+header{
+    background-color: var(--main-bg-color);
+    width: 100%;
+    height: 17%;
+}
+
+#contain-menu{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width:100%;
+    height: 70px;
+    background-color: var(--third-bg-color);
+}
+#menu-avant{
+    background-color: forestgreen;
+    width: 100px;
+
+}
+#main-navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 340px;
+    height: 100%;
+    background-color: chocolate;
+}
+#second-navigation{
+    width:50%;
+    background: burlywood;
+    height: 100%;
+}
+#nav-wrapper{
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: cadetblue;
+    border-style: solid;
+    border-color: violet;
+
+}
+#menu {
+    flex-basis: 100%;
+}
+#menu-checkbox:checked ~ #menu {
+    /*display: block*/
+}
+#menu-checkbox {
+    /*opacity: 0;
+	position: absolute;
+	top: -1000px;*/
+}
+#menu li {
+    border-bottom: 1px solid var(--third-bg-color);
+
+}
+.menu li a {
+    padding: 0.5em 1em;
+}
+#apr-menu{
+    background-color: var(--second-bg-color);
+    width: 30%;
+    height: 100%;
+}
+footer{
+    background-color: var(--thrid-bg-color);
+    width: 100%;
+    height: 40%;
+}
+
+/* Les ecrans */
+
+/* ecran 1 */
+.ecran1{
+    /*background-color: #FBE0C3;*/
+    background-color: var(--main-bg-color);
+    background-size: 100%;
+    /*background-image: url("../images/image_marbre.jpg");*/
+    background-position:center center;
+    background-repeat: repeat;
+}
+
+/* ecran 2 */
+.ecran2{
+    background-color: var(--main-bg-color);
+}
+
+/* ecran 3 */
+.ecran3{
+    background-color: var(--thrid-bg-color);
+}
+
+/* ecran 4 */
+.ecran4{
+    background-color: var(--main-bg-color);
+}
+
+/* ecran 5 */
+.ecran5{
+    background-color: var(--thrid-bg-color);
+}
+
+/* ecran 6 */
+.ecran6{
+    background-color: var(--main-bg-color);
+}
+
+
+
+/* Menu Hamburger */
+
+
+button.btnCat{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: var(--second-bg-color);
+    width: 300px;
+    height: 50px;
+    border:none;
+    border-radius: 5px;
+
+}
+
+
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: left;
+    line-height: 80px;
+    margin-left: -100px;
+    cursor: pointer;
+    display: none;
+}
+
+
